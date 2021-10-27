@@ -1,0 +1,174 @@
+
+:root{
+
+    --cabecera:#9d0208; 
+    --contenedor:#ccff33;
+    --pie:#ee9b00;
+    --secciones:#aacc00;
+    --navigation:#9ef01a;
+}
+
+
+img{
+    /*Nos aseguramos que todas las imagenes
+    sean responsivas, por default*/
+   max-width: 100%;
+}
+
+*{
+    margin: auto;
+    padding: 0;
+}
+
+body{
+    background-color: aqua;
+    background-image: url("imagenes/images.jfif");
+}
+
+
+.cabecera,
+.contenedorGral
+{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*
+    -------------------------------------
+               Cabecera
+    -------------------------------------
+*/
+.cabecera{
+      background-color:var(--cabecera);
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 10px;
+}
+
+.brand{
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.contenedorGral{
+    
+    background-color:var(--contenedor)
+
+}
+/*
+    -------------------------------------
+                  Navegación
+    -------------------------------------
+*/
+
+.nav{
+    background-color:var(--navigation);
+}
+
+
+.nav-lista{
+   list-style: none;
+   display: flex;
+   margin-bottom: 10px; 
+   justify-content: space-around;
+   padding: 20px 0 20px 0;
+   border-radius: 3px;
+   flex-wrap: wrap;/*esto indica que si el espacio donde se
+   está ajustando la pantalla se está a cabando para contener
+   los elementos, dichos elementos se acomoden a 2 líneas*/
+}
+
+.nav-lista_item, 
+.ingreso {
+    
+background-color:#358f80;
+flex-grow: 1;
+padding: 5px;
+text-align: center;
+margin-top: 2px;
+border-left: 1.5px solid green;   
+transition-duration: 3s;
+}
+
+.nav-lista_item:hover,
+.ingreso:hover{
+    background-color: #80b918;
+    border-color: yellow
+}
+
+.item-menu,
+.ingreso{
+    cursor:pointer  ;
+}
+
+.boton{
+    display: none;
+}
+
+@media (max-width:800px) {
+    .boton{
+        display: block;
+    }
+
+    .nav{
+        display: none;
+    }
+}
+
+
+.mostrar{
+    display: flex;
+}
+
+/*
+    -------------------------------------
+                 Principal
+    -------------------------------------
+*/
+.header{
+    text-align: center;
+}
+
+.portada{
+    margin:10px
+}
+
+
+.contenido{
+    margin: 10px;
+}
+
+.secciones, 
+.variedades{
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+/*
+    -------------------------------------
+                Sobre nosotros
+    -------------------------------------
+*/
+
+.footer{
+    background-color: #ee9b00;
+    display:flex;
+margin-bottom: 20px;
+}
+
+.data{
+    background-color: aliceblue;
+    margin-right: 250px;
+    text-align: left;
+    marging-left:5px
+}
+
+.redsocial{
+    padding:2px;
+    margin-right: 100px;
+}
+
+.redes{
+    padding: 2px;
+    margin: 10px;
+}   

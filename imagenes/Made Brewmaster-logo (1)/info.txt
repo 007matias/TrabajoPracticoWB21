@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: SourceSerifPro-Semibold
+font link: https://fonts.google.com/specimen/Source+Serif+Pro
+font author: Frank Grießhammer
+font author site: http://www.frgr.de/
+Slogan Font: WorkSans-Light.ttf
+
+icon designer: Tippawan Sookruay
+icon designer link: /wanny4
+        
+{"bg":"#E47330","icon":"#BDD331","font":"#ffffff","slogan":"#ffffff"}
+      
