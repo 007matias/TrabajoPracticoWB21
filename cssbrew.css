@@ -165,8 +165,20 @@ body {
     padding: 7px;
 }
 
-.tiulologo {
+.titulo-logo {
+    display: none;
     text-align: center;
+    position: relative;
+    top: 5px;
+    left: 120px;
+}
+
+.titulo-logo:hover {
+    
+    background-color: white;
+   display: block;
+   position: relative;
+    
 }
 
 .fondo-logo {
@@ -177,8 +189,18 @@ body {
     transition-duration: 2s;
 }
 
-.fondo-logo:hover {
-    opacity: 0.15;
+.fondo-logo:hover,
+.titulo-logo
+ {
+    opacity: 0.1;
+    background-color: white;
+    display: block;
+}
+
+@media (max-width:800px){
+    .secciones {
+        grid-template-columns: 1fr;
+        position: absolute;
 }
 
 /*
