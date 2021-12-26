@@ -174,11 +174,9 @@ body {
 }
 
 .titulo-logo:hover {
-    
     background-color: white;
-   display: block;
-   position: relative;
-    
+    display: block;
+    position: relative;
 }
 
 .fondo-logo {
@@ -190,17 +188,46 @@ body {
 }
 
 .fondo-logo:hover,
-.titulo-logo
- {
+.titulo-logo {
     opacity: 0.1;
     background-color: white;
     display: block;
 }
-
-@media (max-width:800px){
+/*
+@media (max-width: 800px) {
     .secciones {
         grid-template-columns: 1fr;
-        position: absolute;
+        position: relative;
+    }
+}
+*/
+
+@media (max-width: 800px) {
+    .secciones {
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+}
+
+
+/*Secciones reducidas*/
+
+.small-secctions{
+    display: none;
+  }
+
+.small-item{
+    flex-grow: 1; 
+    margin: 2px;
+padding: 3px;
+border-left:1px solid yellow;
+border-right: 1px solid yellow;
+
+}
+
+.small-item:hover{
+    background-color: #ccff33;
+    border-color: aqua;
 }
 
 /*
@@ -212,6 +239,9 @@ body {
 .footer {
     background-color: #ee9b00;
     display: flex;
+    position: relative;
+    grid-template-columns: 350px 1fr;
+    padding-bottom: 25px;
 }
 
 .data {
@@ -228,3 +258,27 @@ body {
     padding: 2px;
     margin: 10px;
 }
+
+
+/*
+    -------------------------------------
+               secciones reducidas
+    -------------------------------------
+*/
+
+@media(max-width:800px){
+    
+    .logos{
+        display: none
+    }
+    .small-secctions{
+        
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        position:relative;
+        
+    }
+}
+
+
