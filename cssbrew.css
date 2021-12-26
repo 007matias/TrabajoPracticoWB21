@@ -154,6 +154,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     margin-bottom: 15px;
+    
 }
 
 .logos {
@@ -239,26 +240,47 @@ border-right: 1px solid yellow;
 .footer {
     background-color: #ee9b00;
     display: flex;
-    position: relative;
-    grid-template-columns: 350px 1fr;
+   /* position: relative;
+    grid-template-columns: 350px 1fr;*/
     padding-bottom: 25px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
 }
 
 .data {
-    background-color: aliceblue;
-    margin-right: 250px;
+
+    /*margin-right: 250px;*/
+    margin: 25px;
 }
 
-.redsocial {
+.social-media {
     padding: 2px;
-    margin-right: 100px;
+    list-style: none;
+    display:flex;
 }
 
 .redes {
     padding: 2px;
     margin: 10px;
+    padding-right: 150px;
 }
 
+.follow-us {
+    padding-left: 5px;
+}
+
+@media (max-width:800px) {
+    
+    .social-media{
+ 
+        display: block;
+  margin-left: 50px;
+    }
+
+    .socialimage{
+        max-width: 100px;
+    }
+}
 
 /*
     -------------------------------------
