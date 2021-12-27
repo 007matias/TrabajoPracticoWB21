@@ -55,6 +55,30 @@ body{
     background-color:var(--contenedor)
 
 }
+
+
+/*
+    -------------------------------------
+                brand
+    -------------------------------------
+*/
+
+@media (max-width: 800px) {
+    .brand {
+        width: 75%;
+        position: static;
+        display: flex;
+    }
+}
+.cabecera-brand {
+    display: flex;
+}
+
+/*
+    -------------------------------------
+                brand
+    -------------------------------------
+*/
 /*
     -------------------------------------
                   Navegación
