@@ -1,34 +1,29 @@
-        :root{
-
-            --cabecera:#9d0208; 
-            --contenedor:#ccff33;
-            --pie:#ee9b00;
-            --secciones:#aacc00;
-            --navigation:#9ef01a;
-        }
-
-
-
-img{
-    /*Nos aseguramos que todas las imagenes
-    sean responsivas, por default*/
-   max-width: 100%;
+:root {
+    --cabecera: #9d0208;
+    --contenedor: #ccff33;
+    --pie: #ee9b00;
+    --secciones: #aacc00;
+    --navigation: #9ef01a;
 }
 
-*{
+img {
+    /*Nos aseguramos que todas las imagenes
+    sean responsivas, por default*/
+    max-width: 100%;
+}
+
+* {
     margin: auto;
     padding: 0;
 }
 
-body{
+body {
     background-color: aqua;
     background-image: url("imagenes/images.jfif");
 }
 
-
 .cabecera,
-.contenedorGral
-{
+.contenedorGral {
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -38,22 +33,20 @@ body{
                Cabecera
     -------------------------------------
 */
-.cabecera{
-      background-color:var(--cabecera);
-      display: flex;
-      margin-top: 10px;
-      margin-bottom: 10px;
+.cabecera {
+    background-color: var(--cabecera);
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.brand{
+.brand {
     padding: 10px;
     border-radius: 15px;
 }
 
-.contenedorGral{
-    
-    background-color:var(--contenedor)
-
+.contenedorGral {
+    background-color: var(--contenedor);
 }
 /*
     -------------------------------------
@@ -61,101 +54,165 @@ body{
     -------------------------------------
 */
 
-.nav{
-    background-color:var(--navigation);
+.nav {
+    background-color: var(--navigation);
 }
 
-
-.nav-lista{
-   list-style: none;
-   display: flex;
-   margin-bottom: 10px; 
-   justify-content: space-around;
-   padding: 20px 0 20px 0;
-   border-radius: 3px;
-   flex-wrap: wrap;/*esto indica que si el espacio donde se
+.nav-lista {
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
+    border-radius: 3px;
+    flex-wrap: wrap; /*esto indica que si el espacio donde se
    está ajustando la pantalla se está a cabando para contener
    los elementos, dichos elementos se acomoden a 2 líneas*/
 }
 
-.nav-lista_item, 
+.nav-lista_item,
 .ingreso {
-    
-background-color:#358f80;
-flex-grow: 1;
-padding: 5px;
-text-align: center;
-margin-top: 2px;
-border-left: 1.5px solid green;   
-transition-duration: 3s;
+    background-color: #358f80;
+    flex-grow: 1;
+    padding: 5px;
+    text-align: center;
+    margin-top: 2px;
+    border-left: 1.5px solid green;
+    transition-duration: 3s;
 }
 
 .nav-lista_item:hover,
-.ingreso:hover{
+.ingreso:hover {
     background-color: #80b918;
-    border-color: yellow
+    border-color: yellow;
 }
 
 .item-menu,
-.ingreso{
-    cursor:pointer  ;
+.ingreso {
+    cursor: pointer;
 }
 
-.boton{
+.boton {
     display: none;
 }
 
-@media (max-width:800px) {
-    .boton{
+@media (max-width: 800px) {
+    .boton {
         display: block;
     }
 
-    .nav{
+    .nav {
         display: none;
     }
 }
 
-
-.mostrar{
+.mostrar {
     display: flex;
 }
 
+/*
+    -------------------------------------
+                brand
+    -------------------------------------
+*/
 
+@media (max-width: 800px) {
+    .brand {
+        width: 75%;
+        position: static;
+        display: flex;
+    }
+}
+.cabecera-brand {
+    display: flex;
+}
+
+/*
+    -------------------------------------
+                brand
+    -------------------------------------
+*/
 /*
     -------------------------------------
                 Proceso
     -------------------------------------
 */
 
-.proceso{
+.proceso {
     display: block;
     text-align: center;
- 
 }
 
-
-
-.descripcion{
-    background-color:var(--navigation);
+.descripcion {
+    background-color: var(--navigation);
     display: grid;
-    grid-template-columns: repeat(2,2fr);
-    gap:10px
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    margin-bottom: 25px;
 }
 
-.columnas{
+.columnas {
     background-color: #80b918;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.parrafos{
-    background-color:#d9ed92;
+.parrafos {
+    background-color: #d9ed92;
     text-align: left;
-    padding:10px
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    .descripcion {
+        grid-template-columns: 1fr;
+    }
+    .columnas {
+        padding: 0;
+    }
+}
+
+/*
+    -------------------------------------
+                Animation section
+    -------------------------------------
+*/
+
+.animation-section {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+.imagen {
+    border-radius: 100px;
+    transition-property: background-color, box-shadow;
+    transition-duration: 3s;
+
+    transition-duration: 0, /*border radius*/ 
+    1,5s, /*background-color*/ 
+    1,5s; /*box-shadow*/
+
+    transition-delay: 0s, /*border radius*/ 
+    1,5s, /*background-color*/ 
+    2,5s; /*box-shadow*/
+}
+
+
+.imagen:hover{
+    background-color:crimson;
+    /*          X  Y blur Exp  Color       */
+    box-shadow: 0 0 10px 20px pink;
 }
 
 
 
+@media (max-width: 800px) {
+    .animation-section {
+        grid-template-columns: 1fr;
+    }
+}
 
 /*
     -------------------------------------
@@ -163,25 +220,45 @@ transition-duration: 3s;
     -------------------------------------
 */
 
-.footer{
+.footer {
     background-color: #ee9b00;
-    display:flex;
-margin-bottom: 20px;
+    display: flex;
+    /* position: relative;
+    grid-template-columns: 350px 1fr;*/
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
 }
 
-.data{
-    background-color: aliceblue;
-    margin-right: 250px;
-    text-align: left;
-    margin-left:5px
+.data {
+    /*margin-right: 250px;*/
+    margin: 25px;
 }
 
-.redsocial{
-    padding:2px;
-    margin-right: 100px;
+.social-media {
+    padding: 2px;
+    list-style: none;
+    display: flex;
 }
 
-.redes{
+.redes {
     padding: 2px;
     margin: 10px;
+    padding-right: 150px;
+}
+
+.follow-us {
+    padding-left: 5px;
+}
+
+@media (max-width: 800px) {
+    .social-media {
+        display: none;
+        margin-left: 150px;
+        position: relative;
+    }
+
+    .socialimage {
+        max-width: 100px;
+    }
 }

@@ -166,14 +166,13 @@ body {
     padding: 7px;
 }
 
-.titulo-logo {
+.titulo-logo{
     display: none;
     text-align: center;
     position: relative;
     top: 5px;
-    left: 120px;
+    left:120px
 }
-
 .titulo-logo:hover {
     background-color: white;
     display: block;
@@ -193,6 +192,7 @@ body {
     opacity: 0.1;
     background-color: white;
     display: block;
+   
 }
 /*
 @media (max-width: 800px) {
@@ -274,7 +274,7 @@ border-right: 1px solid yellow;
     .social-media{
  
         display: block;
-  margin-left: 50px;
+  margin-left: 150px;
     }
 
     .socialimage{
