@@ -151,10 +151,37 @@ transition-duration: 3s;
 */
 .header{
     text-align: center;
+    display: flex;
 }
 
 .portada{
-    margin:10px
+    margin:10px;
+    
+}
+
+
+@keyframes rotar {
+    to{
+        transform: rotate(2turn);
+    scale: 2;
+    }
+    
+}
+.lista-portada{
+    display: flex;
+    list-style: none;
+    grid-template-columns: 4,1fr;
+    
+}
+
+.imagen-portada{
+    border-radius: 90px;
+}
+
+
+.imagen-portada:hover{
+    animation-name: rotar;
+animation-duration: loop;
 }
 
 
