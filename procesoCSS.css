@@ -185,7 +185,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
 }
-.imagen {
+.imagen-animation{
     border-radius: 100px;
     transition-property: background-color, box-shadow;
     transition-duration: 3s;
@@ -200,10 +200,11 @@ body {
 }
 
 
-.imagen:hover{
+.imagen-animation:hover{
     background-color:crimson;
     /*          X  Y blur Exp  Color       */
     box-shadow: 0 0 10px 20px pink;
+    scale: 1.5;
 }
 
 
