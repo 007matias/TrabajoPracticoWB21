@@ -13,7 +13,7 @@
 <body>
 
     <div class="cabecera">
-        <a class="cabecera-brand">
+        <a class="cabecera-brand" href="index.html">
 
             <img class="brand" src="imagenes/Made Brewmaster-logo (1)/port.png" alt="Logo-marca">
 
@@ -82,13 +82,16 @@
                             </a>
                         </li>
                         <li class="section-image">
-                       <a href="#tipoTrigo">     <img class="imagen-portada" src="imagenes/trigo.png" alt="maceracion de la cebada"> </a>
+                            <a href="#tipoTrigo"> <img class="imagen-portada" src="imagenes/trigo.png"
+                                    alt="maceracion de la cebada"> </a>
                         </li>
                         <li class="section-image">
-                       <a href="#tipoLager">     <img class="imagen-portada" src="imagenes/lager.png" alt="filtado de cebada"> </a>
+                            <a href="#tipoLager"> <img class="imagen-portada" src="imagenes/lager.png"
+                                    alt="filtado de cebada"> </a>
                         </li>
                         <li class="section-image">
-                        <a href="#tipoAle">    <img class="imagen-portada" src="imagenes/ale.png" alt="cocción del mosto"> </a>
+                            <a href="#tipoStout"> <img class="imagen-portada" src="imagenes/negra.png"
+                                    alt="cocción del mosto"> </a>
                         </li>
 
                     </ul>
@@ -112,6 +115,7 @@
 
 
                 <h3 id="tipoAle">Cervezas tipo Ale clásicas</h3>
+                <p>
                 <ul>
                     <li>Pale Ale: Cerveza tradicional inglesa, de color cobre, sabor amargo y final seco.</li>
                     <li>India Pale Ale: Pale Ale con un sabor más fuerte a lúpulo y malta caramelo. Acentuación frutal y
@@ -123,21 +127,31 @@
                         nuez.
                     </li>
                 </ul>
+                </p>
             </div>
 
             <div class="variedades">
-                <img src="imagenes/cervezatrigo.jpg" alt="variedades de cerveza">
+               <!-- <img class= "imagen-variedad" src="imagenes/cervezatrigo.jpg" alt="variedades de cerveza"> -->
+
+               <picture>
+                <!--en tamaños de pantalla menores a 700px, se cargará esta imagen-->
+                <source class= "imagen-variedad" srcset="imagenes/VariedadesDeCerveza.png" media="(max-width:800px)">
+               <!--Acá utilizo la imagen grande-->
+                <img class= "imagen-variedad" src="imagenes/cervezatrigo.jpg" alt="playa">
+            </picture>
+
             </div>
 
             <div class="secciones">
-                <h3>Cervezas Ales de trigo:</h3>
+                <h3 id="tipoTrigo">Cervezas Ales de trigo:</h3>
 
                 <ul>
-                    <li>Bavarian Weizen/Weissbier: Cerveza de trigo, originaria del sur de Alemania. Es turbia y cuenta
+
+                    <li>Bavarian Weizen/Weissbier:   <p> Cerveza de trigo, originaria del sur de Alemania. Es turbia y cuenta
                         con
                         un color pálido o de color ámbar, sabores de plátano y con acentuación a clavo de olor. Su
                         espuma es
-                        blanca de larga duración.</li>
+                        blanca de larga duración.  </p></li>
                     <li>American Wheat: Cerveza de trigo, originaria de Estados Unidos. Es pálida con un color dorado,
                         su
                         espuma es de larga duración y blanca. Generalmente es más amarga que las cervezas de trigo
@@ -147,6 +161,36 @@
                         en
                         apariencia y cuenta con un aroma y sabor frutal. Su espuma es de color marrón claro, y de larga
                         duración.</li>
+                </ul>
+
+
+            </div>
+
+
+            <div class="variedades">
+ 
+                <picture>
+                 <!--en tamaños de pantalla menores a 700px, se cargará esta imagen-->
+                 <source class= "imagen-variedad" srcset="imagenes/negras.jpg" media="(max-width:800px)">
+                <!--Acá utilizo la imagen grande-->
+                 <img class= "imagen-variedad" src="imagenes/guinness.jpg" alt="playa">
+             </picture>
+
+
+            <div class="secciones">
+                <h3 id="tipoStout">Cervezas Stout</h3>
+                <p>Es una cerveza muy oscura, hecha con una buena proporción de maltas tostadas y caramelizadas además
+                    de una buena dósis de lúpulo. Son cervezas de textura espesa y cremosa con fuerte aroma a malta y un
+                    regusto dulce</p>
+                <ul>
+                    <li>Bock: Son cervezas tipo Lager muy ricas en maltas tostadas lo que les confiere un color muy
+                        oscuro.</li>
+                    <li>Porter: Cson para muchos un tipo más de Stout, pero algo menos oscuras y potentes. Son también
+                        cervezas ale con un preciosos color y también muy ricas en lúpulo..
+                    </li>
+                    <li>Barley Wine: o vino de cebada, el que se lleva el récor alcohólico. Hechas con ingentes
+                        cantidades de malta, el resultado inmediato es una cerveza con mucho cuerpo y graduaciones que
+                        superan a menudo el 10%. Para beber en copa pequeña como si fuera vino, y de ahí su nombre</li>
                 </ul>
 
 
@@ -183,6 +227,7 @@
         </div>
     </div>
 
+    <script src="menuBrew.js"> </script>
 </body>
 
 
