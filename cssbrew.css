@@ -95,7 +95,7 @@ body {
 .boton {
     display: none;
 }
-
+/*
 @media (max-width: 800px) {
     .boton {
         display: block;
@@ -104,7 +104,7 @@ body {
     .nav {
         display: none;
     }
-}
+} */
 
 .mostrar {
     display: flex;
@@ -115,23 +115,19 @@ body {
                 brand
     -------------------------------------
 */
-
+/*
 @media (max-width: 800px) {
     .brand {
         width: 75%;
         position: static;
         display: flex;
     }
-}
+}*/
 .cabecera-brand {
     display: flex;
 }
 
-/*
-    -------------------------------------
-                brand
-    -------------------------------------
-*/
+
 
 /*
     -------------------------------------
@@ -203,6 +199,8 @@ body {
 }
 */
 
+/*
+
 @media (max-width: 800px) {
     .secciones {
         grid-template-columns: 1fr;
@@ -210,7 +208,7 @@ body {
     }
 }
 
-
+*/
 /*Secciones reducidas*/
 
 .small-secctions{
@@ -268,7 +266,7 @@ border-right: 1px solid yellow;
 .follow-us {
     padding-left: 5px;
 }
-
+/*
 @media (max-width:800px) {
     
     .social-media{
@@ -281,10 +279,10 @@ border-right: 1px solid yellow;
         max-width: 100px;
     }
 }
-
+*/
 /*
     -------------------------------------
-               secciones reducidas
+               secciones reducidas - queries
     -------------------------------------
 */
 
@@ -304,3 +302,41 @@ border-right: 1px solid yellow;
 }
 
 
+@media (max-width: 800px) {
+    .boton {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .brand {
+        width: 75%;
+        position: static;
+        display: flex;
+    }
+}
+
+@media (max-width: 800px) {
+    .secciones {
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+}
+
+@media (max-width:800px) {
+    
+    .social-media{
+ 
+        display: block;
+  margin-left: 150px;
+    }
+
+    .socialimage{
+        max-width: 100px;
+    }
+}
