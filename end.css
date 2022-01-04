@@ -1,0 +1,206 @@
+:root {
+    --cabecera: #9d0208;
+    --contenedor: #ccff33;
+    -pie: #ee9b00;
+    --secciones: #aacc00;
+    --navigation: #9ef01a;
+}
+
+
+img {
+   
+    max-width: 100%;
+}
+
+* {
+    margin: auto;
+    padding: 0;
+}
+
+body {
+    background-color: aqua;
+    background-image: url("imagenes/images.jfif");
+}
+
+.cabecera,
+.contenedorGral {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+/*
+    -------------------------------------
+               Cabecera
+    -------------------------------------
+*/
+.cabecera {
+    background-color: var(--cabecera);
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.brand {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.contenedorGral {
+    background-color: var(--contenedor);
+}
+
+/*
+    -------------------------------------
+                  Navegación
+    -------------------------------------
+*/
+
+.nav {
+    background-color: var(--navigation);
+}
+
+.nav-lista {
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
+    border-radius: 3px;
+    flex-wrap: wrap
+}
+
+.nav-lista_item,
+.ingreso {
+    background-color: #358f80;
+    flex-grow: 1;
+    padding: 5px;
+    text-align: center;
+    margin-top: 2px;
+    border-left: 1.5px solid green;
+    transition-duration: 3s;
+}
+
+.nav-lista_item:hover,
+.ingreso:hover {
+    background-color: #80b918;
+    border-color: yellow;
+}
+
+.item-menu,
+.ingreso {
+    cursor: pointer;
+}
+
+.boton {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .boton {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+}
+
+.mostrar {
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    .brand {
+        width: 75%;
+        position: static;
+        display: flex;
+    }
+}
+.cabecera-brand {
+    display: flex;
+}
+
+
+
+/*
+    -------------------------------------
+                Proceso
+    -------------------------------------
+*/
+
+.proceso {
+    display: block;
+    text-align: center;
+}
+
+.secciones{
+    
+    padding: 15px;
+    margin: 20px;
+
+    
+}
+
+
+#agregar{
+    margin: 5px;
+}
+
+#texto{
+    width:100%;
+    min-width: 75px;
+}
+#lista{
+    margin-top: 25px;
+    padding: 25px;
+}
+#enviar{
+    display: block;
+}
+
+.receta{
+    margin: 10px;
+   width:100%;
+   resize: none;
+    min-width: 75px;
+}
+
+/*
+    -------------------------------------
+                Sobre nosotros
+    -------------------------------------
+*/
+
+.footer {
+    background-color: #ee9b00;
+    display: flex;
+   /* position: relative;
+    grid-template-columns: 350px 1fr;*/
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.data {
+
+    /*margin-right: 250px;*/
+    margin: 25px;
+}
+
+.social-media {
+    padding: 2px;
+    list-style: none;
+    display:flex;
+}
+
+.redes {
+    padding: 2px;
+    margin: 10px;
+    padding-right: 150px;
+}
+
+.follow-us {
+    padding-left: 5px;
+}
+
