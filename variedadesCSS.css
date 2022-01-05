@@ -89,7 +89,10 @@ body{
     background-color:var(--navigation);
 }
 
-
+a:link {
+    text-decoration:none; 
+    
+}
 .nav-lista{
    list-style: none;
    display: flex;

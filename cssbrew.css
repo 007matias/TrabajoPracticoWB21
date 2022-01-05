@@ -58,6 +58,10 @@ body {
     background-color: var(--navigation);
 }
 
+a:link {
+    text-decoration:none; 
+    text-decoration-color: black;
+}
 .nav-lista {
     list-style: none;
     display: flex;
@@ -68,6 +72,7 @@ body {
     flex-wrap: wrap; /*esto indica que si el espacio donde se
    está ajustando la pantalla se está a cabando para contener
    los elementos, dichos elementos se acomoden a 2 líneas*/
+   text-decoration: none;
 }
 
 .nav-lista_item,
