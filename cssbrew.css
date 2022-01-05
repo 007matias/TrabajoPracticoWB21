@@ -191,17 +191,16 @@ body {
     display: block;
    
 }
-/*
+
 @media (max-width: 800px) {
     .secciones {
         grid-template-columns: 1fr;
         position: relative;
     }
 }
-*/
+
 
 /*
-
 @media (max-width: 800px) {
     .secciones {
         grid-template-columns: 1fr;
